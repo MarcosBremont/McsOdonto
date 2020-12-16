@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="McsOdonto.FrmLogin">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#25313D">
+            <Image Source="Logo.png" WidthRequest="200"/>
+
+            <StackLayout Margin="10,10,10,10">
+                <Entry Placeholder="Usuario" PlaceholderColor="White" TextColor="White"></Entry>
+                <Entry Placeholder="Contraseña" PlaceholderColor="White" TextColor="White"></Entry>
+                <Button Text="Login" CornerRadius="25" BackgroundColor="White" Margin="30" x:Name="BtnLogin" Clicked="BtnLogin_Clicked"/>
+            </StackLayout>
+            <Label Text="Created By Marcos Bremont" HorizontalOptions="CenterAndExpand" Margin="0,120,0,0" TextColor="White"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
