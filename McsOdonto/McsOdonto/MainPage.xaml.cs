@@ -14,5 +14,10 @@ namespace McsOdonto
         {
             InitializeComponent();
         }
+
+        private async void Btnpagos_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new FrmPagos());
+        }
     }
 }

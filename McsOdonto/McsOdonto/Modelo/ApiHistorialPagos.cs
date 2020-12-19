@@ -13,13 +13,13 @@ namespace McsOdonto.Modelo
         
         }
 
-        public async Task<List<EPagos>> GetListadoDeOrdenes(int tiposervicio, int tecnico, string progresoorden)
-        {
+        //public async Task<List<EPagos>> GetListadoDeOrdenes(int tiposervicio, int tecnico, string progresoorden)
+        //{
 
-            var result = await herramientas.EjecutarSentenciaEnApiLibre($"ofitec/ConsultarListadoDeOrdenes/{tiposervicio}/{tecnico}/{progresoorden}");
-            var listado_de_ordenes_servicio = Newtonsoft.Json.JsonConvert.DeserializeObject<List<OrdenServi>>(result);
+        //    var result = await herramientas.EjecutarSentenciaEnApiLibre($"ofitec/ConsultarListadoDeOrdenes/{tiposervicio}/{tecnico}/{progresoorden}");
+        //    var listado_de_ordenes_servicio = Newtonsoft.Json.JsonConvert.DeserializeObject<List<OrdenServi>>(result);
 
-            return listado_de_ordenes_servicio;
-        } // Fin del método ObtenerMenu
+        //    return listado_de_ordenes_servicio;
+        //} // Fin del método ObtenerMenu
     }
 }

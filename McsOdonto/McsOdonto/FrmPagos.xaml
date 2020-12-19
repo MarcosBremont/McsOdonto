@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="McsOdonto.FrmPagos">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3">
+                <Label Text="Pagos Relizados" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <StackLayout >
+                
+                <ListView x:Name="ListView22" CachingStrategy="RecycleElement" HasUnevenRows="True" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid VerticalOptions="CenterAndExpand"
+            Padding="0"
+            HorizontalOptions="FillAndExpand"
+            BackgroundColor="Transparent">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <!-- -->
+                                    <Grid Grid.Row="0"
+                                        BackgroundColor="Transparent"
+                                        Padding="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition />
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Row="0"  TextColor="#c1bdba" Font="Bold" 
+                                        Grid.Column="0"
+                                        Text="Nombre:"/>
+                                        <Label Grid.Row="0"
+                                        Grid.Column="1"
+                                        Text="{Binding Nombre, Mode = TwoWay}"/>
+                                    </Grid>
+                                    <!-- -->
+                                    <Grid Grid.Row="1"
+                                    BackgroundColor="Transparent"
+                                    Padding="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition />
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Row="0"  TextColor="#c1bdba" Font="Bold" 
+                                        Grid.Column="0"
+                                        Text="Telefono:"/>
+                                        <Label Grid.Row="0"
+                                        Grid.Column="1"
+                                        Text="{Binding Telefono, Mode = TwoWay}"/>
+                                    </Grid>
+                                    <!-- -->
+                                    
+                                    <Grid Grid.Row="1"
+                                    BackgroundColor="Transparent"
+                                    Padding="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Row="0" TextColor="#c1bdba" Font="Bold" 
+                                        Grid.Column="2"
+                                        Text="Celular:"/>
+                                        <Label Grid.Row="0"
+                                        Grid.Column="2"
+                                               Margin="55,0,0,0"
+                                        Text="{Binding Celular, Mode = TwoWay}"/>
+                                    </Grid>
+                                    <!-- -->
+                                    
+                                    
+                                    <Grid Grid.Row="2"
+                  BackgroundColor="Transparent"
+                  Padding="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition />
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Row="0"  TextColor="#c1bdba" Font="Bold" 
+                     Grid.Column="0"
+                     Text="Direccion:"/>
+                                        <Label Grid.Row="0"   
+                     Grid.Column="1"
+                     Text="{Binding Direccion, Mode = TwoWay}"/>
+                                    </Grid>
+                                    <!-- -->
+                                    <Grid Grid.Row="3"
+                  BackgroundColor="Transparent"
+                  Padding="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition />
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Row="0"  TextColor="#c1bdba" Font="Bold" 
+                     Grid.Column="0"
+                     Text="Fecha Cita:"/>
+                                        <Label Grid.Row="0"
+                     Grid.Column="1"
+                     Text="{Binding FechaCita, Mode = TwoWay}"/>
+                                    </Grid>
+
+                                
+                               
+                                <!-- -->
+                                <Grid Grid.Row="3"
+                  BackgroundColor="Transparent"
+                  Padding="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Row="0"  TextColor="#c1bdba" Font="Bold" 
+                     Grid.Column="2"
+                     Text="Hora Cita:"/>
+                                    <Label Grid.Row="0"
+                     Grid.Column="2"
+                                           Margin="65,0,0,0"
+                     Text="{Binding HoraCita, Mode = TwoWay}"/>
+                                </Grid>
+                                <Grid Grid.Row="6"
+                  BackgroundColor="Transparent"
+                  Padding="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Row="0"  TextColor="#c1bdba" Font="Bold" 
+                     Grid.Column="0"
+                     Text="Total Dinero:"/>
+                                    <Label Grid.Row="0"
+                     Grid.Column="1"
+                     Text="{Binding TotalDinero, Mode = TwoWay}"/>
+                                </Grid>
+                                <Grid Grid.Row="7"
+                  BackgroundColor="Transparent"
+                  Padding="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Row="0"  TextColor="#c1bdba" Font="Bold" 
+                     Grid.Column="0"
+                     Text="Abono:"/>
+                                    <Label Grid.Row="0"
+                     Grid.Column="1"
+                     Text="{Binding Abono, Mode = TwoWay}"/>
+                                </Grid>
+
+
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+
+
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+
+
+    </ContentPage.Content>
+</ContentPage>
