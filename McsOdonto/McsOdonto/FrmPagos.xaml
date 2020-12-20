@@ -10,7 +10,7 @@
 
             <StackLayout >
                 
-                <ListView x:Name="ListView22" CachingStrategy="RecycleElement" HasUnevenRows="True" >
+                <ListView x:Name="ListView22" SeparatorColor="Red"  CachingStrategy="RecycleElement" HasUnevenRows="True" >
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -40,59 +40,10 @@
                                     </Grid>
                                     
                                     <!-- -->
-                                    <Grid Grid.Row="1"
-                                    BackgroundColor="Transparent"
-                                    Padding="2">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="Auto" />
-                                            <ColumnDefinition />
-                                        </Grid.ColumnDefinitions>
-
-                                        <Label Grid.Row="0"  Margin="5,0,0,0" TextColor="Black" Font="Bold" 
-                                        Grid.Column="0"
-                                        Text="Telefono:"/>
-                                        <Label Grid.Row="0" 
-                                        Grid.Column="1"
-                                        Text="{Binding Telefono, Mode = TwoWay}"/>
-                                    </Grid>
                                     <!-- -->
+                                    
                                     
                                     <Grid Grid.Row="1"
-                                        BackgroundColor="Transparent"
-                                        Padding="2">
-                                          <Grid.ColumnDefinitions>
-                                              <ColumnDefinition Width="Auto" />
-                                              <ColumnDefinition />
-                                              <ColumnDefinition />
-                                          </Grid.ColumnDefinitions>
-                                        <Label Grid.Row="0" Margin="5,0,0,0" TextColor="Black" Font="Bold" 
-                                        Grid.Column="2"
-                                        Text="Celular:"/>
-                                        <Label Grid.Row="0"
-                                        Grid.Column="2"
-                                               Margin="60,0,0,0"
-                                        Text="{Binding Celular, Mode = TwoWay}"/>
-                                    </Grid>
-                                    <!-- -->
-                                    
-                                    
-                                    <Grid Grid.Row="2"
-                                     BackgroundColor="Transparent"
-                                     Padding="2">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="Auto" />
-                                            <ColumnDefinition />
-                                        </Grid.ColumnDefinitions>
-                                        <Label Grid.Row="0"  Margin="5,0,0,0" TextColor="Black" Font="Bold" 
-                                     Grid.Column="0"
-                                     Text="Direccion:"/>
-                                        <Label Grid.Row="0"   
-                                     Grid.Column="1"
-                                     Text="{Binding Direccion, Mode = TwoWay}"/>
-                                    </Grid>
-                                    <!-- -->
-                                    
-                                    <Grid Grid.Row="3"
                                      BackgroundColor="Transparent"
                                      Padding="2">
                                         <Grid.ColumnDefinitions>
@@ -110,7 +61,7 @@
                                 
                                
                                 <!-- -->
-                                <Grid Grid.Row="3"
+                                <Grid Grid.Row="1"
                                  BackgroundColor="Transparent"
                                  Padding="2">
                                     <Grid.ColumnDefinitions>
@@ -127,7 +78,7 @@
                                 </Grid>
                                     
                                     
-                                <Grid Grid.Row="4"
+                                <Grid Grid.Row="2"
                                 BackgroundColor="Transparent"
                                 Padding="2">
                                     <Grid.ColumnDefinitions>
@@ -143,7 +94,7 @@
                                 </Grid>
                                     
                                     
-                                <Grid Grid.Row="4"
+                                <Grid Grid.Row="2"
                                 BackgroundColor="Transparent"
                                 Padding="2">
                                     <Grid.ColumnDefinitions>
@@ -156,7 +107,8 @@
                                     <Label Grid.Row="0"
                                             Margin="55,0,0,0"
                                 Grid.Column="2"
-                                Text="{Binding Abono, Mode = TwoWay}"/>
+                                Text="{Binding Abono, Mode = TwoWay}"
+                                           />
                                 </Grid>
 
 

@@ -4,16 +4,40 @@
              x:Class="McsOdonto.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3">
-            <Label Text="Pagina Principal" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <StackLayout Padding="30">
+        <StackLayout BackgroundColor="#9ACF66">
+        <Frame BackgroundColor="Black">
+            <Label Text="Pagina Principal" HorizontalTextAlignment="Start"  TextColor="White" FontSize="30"/>
+                    
+                </Frame>
+            
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Diego Armando" TextColor="Black" Margin="10,30,0,0" FontSize="16"/>
+            <Image Source="Logo.Png" WidthRequest="70" HorizontalOptions="EndAndExpand"></Image>
+        </StackLayout>
 
-            <Button Text="Pagos" CornerRadius="20" BackgroundColor="#24B089" Margin="0,10,0,0" x:Name="Btnpagos" Clicked="Btnpagos_Clicked"></Button>
-            <Button Text="Citas" CornerRadius="20" BackgroundColor="#24B089" Margin="0,10,0,0" x:Name="BtnCitas"></Button>
-            <Button Text="Ajustes" CornerRadius="20" BackgroundColor="#24B089" Margin="0,10,0,0" x:Name="BtnAjustes"></Button>
+        <Grid>
+            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="25,5,25,0">
+
+            <Button Text="Pagos" Grid.Column="0" CornerRadius="20" WidthRequest="150" HeightRequest="100" BackgroundColor="White" Margin="0,10,0,0" x:Name="Btnpagos" Clicked="Btnpagos_Clicked"></Button>
+                    <Button Text="Citas" Grid.Column="1" CornerRadius="20" WidthRequest="150" HeightRequest="100" BackgroundColor="White" Margin="0,10,0,0" x:Name="BtnCitas"></Button>
         
         </StackLayout>
+            
+            <Button Text="Ajustes" Grid.Row="1" CornerRadius="20" WidthRequest="150" HeightRequest="100" VerticalOptions="CenterAndExpand" BackgroundColor="White" Margin="25,5,25,0" x:Name="BtnAjustes"></Button>
         <!--<Label FontSize="16" Padding="30,24,30,0">
             <Label.FormattedText>
                 <FormattedString>
@@ -78,6 +102,8 @@
 
 
 
+        </Grid>     
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>
