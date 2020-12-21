@@ -8,8 +8,49 @@
             </Frame>
 
             <StackLayout >
-                
-                <ListView x:Name="ListView22" SeparatorColor="Red"  CachingStrategy="RecycleElement" HasUnevenRows="True" >
+                <StackLayout Orientation="Horizontal" Padding="10,0,10,0">
+                    
+                <Label Text="Nombre:" FontAttributes="Bold"></Label>
+                <Label Text="Diego Armando"></Label>
+                <Label Text="Telefono:" FontAttributes="Bold" HorizontalOptions="EndAndExpand"></Label>
+                <Label Text="809-695-8547"></Label>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="10,0,10,0">
+                    <Label Text="Total Dinero:" FontAttributes="Bold"></Label>
+                    <Label Text="35,000"></Label>
+                    <Label Text="Ultimo Abono" FontAttributes="Bold" HorizontalOptions="EndAndExpand"></Label>
+                    <Label Text="7,500"></Label>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="10,0,0,0">
+                    <Label Text="Proxima Cita:" FontAttributes="Bold"></Label>
+                    <Label Text="08/01/2021"></Label>
+                </StackLayout>
+
+                <Frame Grid.Row="0"
+                                    Grid.Column="1">
+                    <StackLayout>
+
+                        <ImageButton
+                                            x:Name="BtnDashboard"
+                                            Source="dashboard.png"
+                                            HeightRequest="30"
+                                            BackgroundColor="Transparent"
+                                            CornerRadius="8"
+                                >
+
+                        </ImageButton>
+
+                        <Label  Text="D A S H B O A R D"
+                                            TextColor="Black"
+                                            FontAttributes="Bold" HorizontalOptions="CenterAndExpand">
+
+                        </Label>
+                    </StackLayout>
+                </Frame>
+
+                <!--<ListView x:Name="ListView22" SeparatorColor="Red"  CachingStrategy="RecycleElement" HasUnevenRows="True" >
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -22,7 +63,7 @@
                                         <RowDefinition Height="Auto"/>
                                         <RowDefinition Height="*"/>
                                     </Grid.RowDefinitions>
-                                    <!-- -->
+                                    --><!-- --><!--
                                     <Grid Grid.Row="0"
                                         BackgroundColor="Transparent"
                                         Padding="2">
@@ -38,8 +79,8 @@
                                         Text="{Binding Nombre, Mode = TwoWay}"/>
                                     </Grid>
                                     
-                                    <!-- -->
-                                    <!-- -->
+                                    --><!-- -->
+                                    <!-- --><!--
                                     
                                     
                                     <Grid Grid.Row="1"
@@ -59,7 +100,7 @@
 
                                 
                                
-                                <!-- -->
+                                --><!-- --><!--
                                 <Grid Grid.Row="1"
                                  BackgroundColor="Transparent"
                                  Padding="2">
@@ -145,7 +186,7 @@
 
                                 
                                
-                                <!-- -->
+                                --><!-- --><!--
                                 <Grid Grid.Row="4"
                                  BackgroundColor="Transparent"
                                  Padding="2">
@@ -169,7 +210,7 @@
 
 
                     </ListView.ItemTemplate>
-                </ListView>
+                </ListView>-->
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

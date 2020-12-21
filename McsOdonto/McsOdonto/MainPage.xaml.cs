@@ -17,12 +17,17 @@ namespace McsOdonto
 
         private async void Btnpagos_Clicked(object sender, EventArgs e)
         {
+            Opacity = 0.5;
             await Navigation.PushModalAsync(new FrmPagos());
+            Opacity = 1;
         }
 
-        private async void BtnCitas_Clicked(System.Object sender, System.EventArgs e)
+
+        private async void BtnCitas_Clicked(object sender, EventArgs e)
         {
+            Opacity = 0.5;
             await Navigation.PushModalAsync(new FrmCitas());
+            Opacity = 1;
         }
     }
 }

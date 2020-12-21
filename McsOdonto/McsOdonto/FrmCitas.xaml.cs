@@ -25,10 +25,10 @@ namespace McsOdonto
 
         public async void LlenarMenu()
         {
-            ListView2 oEjemploListView1Model = new ListView2();
-            ListView22.ItemsSource = null;
-            ListView22.ItemsSource = oEjemploListView1Model.ObtenerMenuEjemplo1();
-            ListView22.ItemSelected += OnClickOpcionSeleccionada;
+            //ListView2 oEjemploListView1Model = new ListView2();
+            //ListView22.ItemsSource = null;
+            //ListView22.ItemsSource = oEjemploListView1Model.ObtenerMenuEjemplo1();
+            //ListView22.ItemSelected += OnClickOpcionSeleccionada;
         }
 
         private async void OnClickOpcionSeleccionada(object sender, SelectedItemChangedEventArgs e)

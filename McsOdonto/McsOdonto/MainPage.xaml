@@ -32,86 +32,79 @@
                 </StackLayout>
 
 
-                <Grid RowSpacing="0" BackgroundColor="White">
 
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="100"/>
-                        <RowDefinition Height="85"/>
-                        <RowDefinition Height="50"/>
-
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0,25,0,0">
                     <Frame>
                         <StackLayout>
-                            
-                        <ImageButton
+
+                            <ImageButton
                             
                                            
-                                            x:Name="btnPagos"
+                                            x:Name="BtnPagos"
                                             Source="tarjeta.png"
                                             HeightRequest="30"
                                             BackgroundColor="Transparent"
-                                          
+                                           Clicked="Btnpagos_Clicked"
                                             CornerRadius="8"
                             >
-                            
-                        </ImageButton>
-                        <Label  Text="P A G O S"
+
+                            </ImageButton>
+                            <Label  Text="P A G O S"
                                             TextColor="Black"
                                             FontAttributes="Bold" HorizontalOptions="CenterAndExpand"></Label>
-                            
-                           
+
+
                         </StackLayout>
                     </Frame>
-                    <Button 
-                        Margin="5,20,5,5"
-                       
-                                            Grid.Row="0"
-                                            Grid.Column="1"
-                                            x:Name="btnEnCamino"
-                                            Text="C I T A S"
-                                            TextColor="White"
-                                            HeightRequest="80"
-                                            BackgroundColor="#3F79AC"
+
+
+                    <Frame Grid.Row="0"
+                                    Grid.Column="1">
+                        <StackLayout>
+
+                            <ImageButton
+                                            x:Name="BtnCitas"
+                                            Source="programar.png"
+                                            HeightRequest="30"
+                                            BackgroundColor="Transparent"
                                             CornerRadius="8"
-                                           >
-                    </Button>
+                                Clicked="BtnCitas_Clicked">
 
-                    <Button 
-                    Margin="5,5,5,5"
-                   
-                                    Grid.Row="1"
-                                    Grid.Column="0"
-                                    x:Name="btnEnProceso"
-                                    Text="EN  PROCESO"
-                                    TextColor="White"
-                                    HeightRequest="80"
-                                    BackgroundColor="#D09625"
-                                    CornerRadius="8"
-                                   >
-                    </Button>
+                            </ImageButton>
 
-                    <Button 
-                    Margin="5,5,5,5"
-                 
-                                    Grid.Row="1"
-                                    Grid.Column="1"
-                                    x:Name="btnTrabajada"
-                                    Text="A J U S T E S"
-                                    TextColor="White"
-                                    HeightRequest="80"
-                                    BackgroundColor="#7cc151"
-                                    CornerRadius="8">
-                    </Button>
-                </Grid>
+                            <Label  Text="C I T A S"
+                                            TextColor="Black"
+                                            FontAttributes="Bold" HorizontalOptions="CenterAndExpand">
+
+                            </Label>
+                        </StackLayout>
+                    </Frame>
+
+                </StackLayout>
+
+                <Frame>
+                    <StackLayout>
+
+                        <ImageButton
+                                            x:Name="BtnConfiguraciones"
+                                            Source="configuraciones.png"
+                                            HeightRequest="30"
+                                            BackgroundColor="Transparent"
+                                            CornerRadius="8">
+
+                        </ImageButton>
+
+                        <Label  Text="A J U S T E S"
+                                            TextColor="Black"
+                                            FontAttributes="Bold" HorizontalOptions="CenterAndExpand">
+
+                        </Label>
+                    </StackLayout>
+                </Frame>
+
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"  x:Name="LytCerrarSesion">
-                    <ImageButton Source="logout" HeightRequest="25" x:Name="BtnLogout" BackgroundColor="Transparent">
-                    </ImageButton>
+                    <ImageButton Source="logout" HeightRequest="25" x:Name="BtnLogout" BackgroundColor="Transparent"/>
                     <Label 
                         FontSize="16"
                          x:Name="BtnCerrarSesion"
@@ -124,11 +117,7 @@
 
 
                 </StackLayout>
-                <StackLayout Orientation="Horizontal">
-                    <Image Source="Sistecsoft.png"  WidthRequest="150"  HorizontalOptions="CenterAndExpand" x:Name="SistecsoftImagen"  Grid.Column="0" Grid.Row="0" ></Image>
-                    <Image Source="OFICABLELOGO.png"  WidthRequest="150"  HorizontalOptions="CenterAndExpand"  x:Name="OficableImagen" Grid.Column="1" Grid.Row="0" ></Image>
-
-                </StackLayout>
+               
 
             </StackLayout>
         </ScrollView>
