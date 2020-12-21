@@ -19,5 +19,10 @@ namespace McsOdonto
         {
             await Navigation.PushModalAsync(new FrmPagos());
         }
+
+        private async void BtnCitas_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new FrmCitas());
+        }
     }
 }

@@ -32,8 +32,8 @@
 
         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="25,5,25,0">
 
-            <Button Text="Pagos" Grid.Column="0" CornerRadius="20" WidthRequest="150" HeightRequest="100" BackgroundColor="White" Margin="0,10,0,0" x:Name="Btnpagos" Clicked="Btnpagos_Clicked"></Button>
-                    <Button Text="Citas" Grid.Column="1" CornerRadius="20" WidthRequest="150" HeightRequest="100" BackgroundColor="White" Margin="0,10,0,0" x:Name="BtnCitas"></Button>
+            <Button Text="Pagos" Grid.Column="0" CornerRadius="20"  BackgroundColor="White" Margin="10,10,0,0" x:Name="Btnpagos" Clicked="Btnpagos_Clicked"></Button>
+                    <Button Text="Citas" Grid.Column="1" CornerRadius="20"  Clicked="BtnCitas_Clicked"  BackgroundColor="White" Margin="0,10,0,0" x:Name="BtnCitas"></Button>
         
         </StackLayout>
             

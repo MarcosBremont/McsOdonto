@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -88,7 +87,7 @@
   <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\McsOdonto\McsOdonto.csproj">
-      <Project>{F5C52035-4D93-41E7-B5FB-F24852FCD833}</Project>
+      <Project>{E2C307E9-FD2D-416F-A89E-5F08AAA1072A}</Project>
       <Name>McsOdonto</Name>
     </ProjectReference>
   </ItemGroup>
