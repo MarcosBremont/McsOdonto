@@ -3,16 +3,146 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="McsOdonto.MainPage">
 
-    <StackLayout>
-        <StackLayout BackgroundColor="#9ACF66">
-        <Frame BackgroundColor="Black">
-            <Label Text="Pagina Principal" HorizontalTextAlignment="Start"  TextColor="White" FontSize="30"/>
-                    
-                </Frame>
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout BackgroundColor="White">
+
+                <StackLayout Grid.Row="0" Grid.Column="0">
+
+                    <Grid VerticalOptions="FillAndExpand">
+                        <BoxView VerticalOptions="FillAndExpand" BackgroundColor="#2196F3"/>
+                        <StackLayout Orientation="Horizontal" Margin="0,0,0,0" HeightRequest="50" VerticalOptions="End" HorizontalOptions="FillAndExpand" x:Name="lytBackNav">
+                            <Label TextColor="WhiteSmoke"
+                               Text="Dashboard"
+                               FontSize="22"
+                               FontAttributes="Bold"
+                               VerticalOptions="CenterAndExpand"
+                               Margin="10,0,0,0"
+                               HorizontalOptions="StartAndExpand"/>
+                        </StackLayout>
+                    </Grid>
+
+
+                </StackLayout>
+                <StackLayout  Padding="0,0,0,0" Orientation="Horizontal" HorizontalOptions="Center">
+                    <Frame BackgroundColor="#7CC151" Padding="10,2,10,1" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="15"  HasShadow="False">
+                        <Label  TextColor="White" HorizontalOptions="CenterAndExpand" Text="Diego Armando"></Label>
+                    </Frame>
+                </StackLayout>
+
+
+                <Grid RowSpacing="0" BackgroundColor="White">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="85"/>
+                        <RowDefinition Height="50"/>
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Frame>
+                        <StackLayout>
+                            
+                        <ImageButton
+                            
+                                           
+                                            x:Name="btnPagos"
+                                            Source="tarjeta.png"
+                                            HeightRequest="30"
+                                            BackgroundColor="Transparent"
+                                          
+                                            CornerRadius="8"
+                            >
+                            
+                        </ImageButton>
+                        <Label  Text="P A G O S"
+                                            TextColor="Black"
+                                            FontAttributes="Bold" HorizontalOptions="CenterAndExpand"></Label>
+                            
+                           
+                        </StackLayout>
+                    </Frame>
+                    <Button 
+                        Margin="5,20,5,5"
+                       
+                                            Grid.Row="0"
+                                            Grid.Column="1"
+                                            x:Name="btnEnCamino"
+                                            Text="C I T A S"
+                                            TextColor="White"
+                                            HeightRequest="80"
+                                            BackgroundColor="#3F79AC"
+                                            CornerRadius="8"
+                                           >
+                    </Button>
+
+                    <Button 
+                    Margin="5,5,5,5"
+                   
+                                    Grid.Row="1"
+                                    Grid.Column="0"
+                                    x:Name="btnEnProceso"
+                                    Text="EN  PROCESO"
+                                    TextColor="White"
+                                    HeightRequest="80"
+                                    BackgroundColor="#D09625"
+                                    CornerRadius="8"
+                                   >
+                    </Button>
+
+                    <Button 
+                    Margin="5,5,5,5"
+                 
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    x:Name="btnTrabajada"
+                                    Text="A J U S T E S"
+                                    TextColor="White"
+                                    HeightRequest="80"
+                                    BackgroundColor="#7cc151"
+                                    CornerRadius="8">
+                    </Button>
+                </Grid>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"  x:Name="LytCerrarSesion">
+                    <ImageButton Source="logout" HeightRequest="25" x:Name="BtnLogout" BackgroundColor="Transparent">
+                    </ImageButton>
+                    <Label 
+                        FontSize="16"
+                         x:Name="BtnCerrarSesion"
+                         Text="Cerrar Sesión"
+                  
+                         FontAttributes="Bold"
+                         TextColor="Gray"
+                         BackgroundColor="Transparent">
+                    </Label>
+
+
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="Sistecsoft.png"  WidthRequest="150"  HorizontalOptions="CenterAndExpand" x:Name="SistecsoftImagen"  Grid.Column="0" Grid.Row="0" ></Image>
+                    <Image Source="OFICABLELOGO.png"  WidthRequest="150"  HorizontalOptions="CenterAndExpand"  x:Name="OficableImagen" Grid.Column="1" Grid.Row="0" ></Image>
+
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+        <!--<StackLayout BackgroundColor="#9ACF66">
+        <Frame BackgroundColor="Black" CornerRadius="2">
+            <Label Text="Pagina Principal" HorizontalTextAlignment="Center" FontAttributes="Bold"  TextColor="White" FontSize="18"/>
+                --><!--<ImageButton Source="Logo.Png" BackgroundColor="Transparent"></ImageButton>--><!--
+            </Frame>
+            
+            
             
         <StackLayout Orientation="Horizontal">
-            <Label Text="Diego Armando" TextColor="Black" Margin="10,30,0,0" FontSize="16"/>
-            <Image Source="Logo.Png" WidthRequest="70" HorizontalOptions="EndAndExpand"></Image>
+            <Label Text="Diego Armando" TextColor="Black" Margin="10,10,0,0" FontSize="16"/>
+           
         </StackLayout>
 
         <Grid>
@@ -38,7 +168,7 @@
         </StackLayout>
             
             <Button Text="Ajustes" Grid.Row="1" CornerRadius="20" WidthRequest="150" HeightRequest="100" VerticalOptions="CenterAndExpand" BackgroundColor="White" Margin="25,5,25,0" x:Name="BtnAjustes"></Button>
-        <!--<Label FontSize="16" Padding="30,24,30,0">
+        --><!--<Label FontSize="16" Padding="30,24,30,0">
             <Label.FormattedText>
                 <FormattedString>
                     <FormattedString.Spans>
@@ -98,12 +228,12 @@
 
                 </ListView.ItemTemplate>
             </ListView>
-        </Grid>-->
+        </Grid>--><!--
 
 
 
         </Grid>     
         </StackLayout>
-    </StackLayout>
-
+    </StackLayout>-->
+    </ContentPage.Content>
 </ContentPage>

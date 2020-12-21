@@ -84,7 +84,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\tarjeta.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\McsOdonto\McsOdonto.csproj">
       <Project>{E2C307E9-FD2D-416F-A89E-5F08AAA1072A}</Project>
